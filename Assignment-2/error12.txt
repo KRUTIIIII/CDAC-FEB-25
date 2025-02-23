@@ -1,0 +1,35 @@
+public class Main { 
+    public static void main(String[] args) { 
+        while (true) { 
+            System.out.println("Infinite Loop"); 
+        } 
+    } 
+} 
+ What happens when you run this code? How can you avoid infinite loops?
+
+ans: when we run this code, infinite loop will continuously print infinite times because the while (true) condition is always true, so the loop never exits. 
+-------------------------------------------
+public class Main { 
+    public static void main(String[] args) { 
+        int count = 0; // Initialize counter
+        while (true) { 
+            System.out.println("finite Loop " + count);
+            count++;
+            if (count == 5) { // Exit condition
+                break; // Terminates the loop when count reaches 5
+            }
+        } 
+        System.out.println("Outside Loop");
+    } 
+}
+---------------------------------------
+now in the corrected code a finite loop run exactly 5 times and then exit using a break statement.
+-----------------------------------------
+o/p will be: finite Loop 0
+finite Loop 1
+finite Loop 2
+finite Loop 3
+finite Loop 4
+Outside Loop
+----------------------------------------------------
+To avoid infinite loops, you should ensure there is a proper exit condition.

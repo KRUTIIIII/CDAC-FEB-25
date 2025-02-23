@@ -1,0 +1,26 @@
+public class Main { 
+    public static void main(String[] args) { 
+        int class = 10; 
+        System.out.println(class); 
+    } 
+} 
+ What error occurs? Why can't reserved keywords be used as identifiers?
+------------------------------------
+
+error: 'class' is a keyword, and may not be used as an identifier
+        int class = 10; 
+            ^
+--------------------------------------------
+
+class is a reserved keyword in Java, used to define a class. Java does not allow using keywords (like class, int, if, else, etc.) as variable names because they have predefined meanings in the language.
+Since class is already used to declare classes, using it as a variable name confuses the compiler.
+----------------------------------------------------------
+public class Main { 
+    public static void main(String[] args) { 
+        int myClass = 10;  
+        System.out.println(myClass); 
+    } 
+} 
+--------------------------------------------------
+-Java reserves certain words called keywords for specific functions in the language.
+-If we used class as a variable, the compiler wouldn’t know whether it refers to a class declaration or a variable.

@@ -1,0 +1,16 @@
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Hello, World") 
+    } 
+} 
+ What syntax error occurs? How does the missing semicolon affect compilation? 
+----------------------------------------
+
+The code contains a syntax error due to a missing semicolon (;) at the end of the System.out.println("Hello, World") statement.
+-----------------------------
+corrected code:
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Hello, World"); // Added missing semicolon
+    } 
+} 

@@ -1,0 +1,22 @@
+Q3.public class Main { 
+    public static int main(String[] args) { 
+        System.out.println("Hello, World!"); 
+        return 0; 
+    } 
+ 
+ 
+} 
+ What error do you encounter? Why is void used in the main method?
+ 
+ans:
+error: Main method must return a value of type void.
+
+correct code:public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+explaination:In the code snippet, the main method is defined as public int main(String[] args) instead of public static void main(String[] args).The main method is the entry point for any Java application. To fix the error,we need to change the return type of the main method to void, so it matches the required signature for the entry point of a Java program.
+
+Void is used in the main method because Java programs typically do not return anything to the operating system when they start. The return value of the main method is not used by the JVM.

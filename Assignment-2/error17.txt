@@ -1,0 +1,31 @@
+public class Main { 
+    public static void main(String[] args) { 
+        int a = 10; 
+        int b = 5; 
+        int result = a ** b; 
+        System.out.println(result); 
+    } 
+} 
+ What compilation error occurs? Why is the ** operator not valid in Java? 
+
+------------------------------------------
+error: not a statement
+        int result = a ** b;
+                      ^
+error: ';' expected
+
+it will show a compilation error
+The error happens because ** (double asterisk) is not a valid operator in Java.
+Java does not have a built-in exponentiation operator.
+Instead, Java provides the Math.pow(base, exponent) method for exponentiation.
+----------------------------
+we can use Math.pow(a, b), which is part of Java's Math class.
+-------------------
+public class Main { 
+    public static void main(String[] args) { 
+        int a = 10; 
+        int b = 5; 
+        double result = Math.pow(a, b); // Correct way to calculate exponentiation
+        System.out.println(result); 
+    } 
+}

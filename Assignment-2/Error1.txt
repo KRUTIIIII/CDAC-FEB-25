@@ -1,0 +1,20 @@
+Q.3. What error do you get when running this code? 
+ans:
+Modified code:
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+
+
+1. Error in the code:
+The error occurs because the method main is declared as public void main(String[] args), but it should be public static void main(String[] args).
+
+
+3.Explation: The main method must be static because it is called by the Java Virtual Machine (JVM) .
+void: The main method must return void as it doesn't return any value.
+main: This is the entry point for Java applications.
+String[] args: This parameter allows command-line arguments to be passed to the program.
+In the given code, the main method is missing the static keyword, which is why the JVM will not be able to locate it as the entry point of the program.

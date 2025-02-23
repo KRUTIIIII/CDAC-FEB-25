@@ -1,0 +1,24 @@
+Snippet 18:  
+public class Main { 
+    public static void main(String[] args) { 
+        int a = 10; 
+        int b = 5; 
+        int result = a + b * 2; 
+        System.out.println(result); 
+    } 
+} 
+ What is the output of this code? How does operator precedence affect the result?
+
+-------------------------------------------
+There are no syntax errors in this code.
+While there are no errors, operator precedence affects the result. In Java, the multiplication (*) operator has a higher precedence than addition (+). 
+This means that b * 2 is evaluated first, and then the result is added to a.
+
+b * 2 is calculated first: 5 * 2 = 10
+Then, a + 10 is computed: 10 + 10 = 20
+Output: 20
+---------------------------
+if we put brackets in betwn the output will chnge.
+(a + b) * 2):
+(10 + 5) * 2 = 15 * 2 = 30
+Output: 30

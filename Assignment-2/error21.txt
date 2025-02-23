@@ -1,0 +1,19 @@
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Hello, World!"); 
+    // Missing closing brace here 
+} 
+ What does the compiler say about mismatched braces?
+
+------------------------------------------
+
+The code is missing a closing brace (}) for the main method and the Main class.
+Since the main method's closing brace is missing, the compiler does not know where the method ends.
+Additionally, the class definition also remains unclosed, causing a syntax error. 
+---------------------------------------------
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Hello, World!"); 
+    }  // Closing brace for main method
+}  // Closing brace for class
+-----------------------------------------

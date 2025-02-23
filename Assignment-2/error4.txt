@@ -1,0 +1,18 @@
+public class Main { 
+    public static void main() { 
+        System.out.println("Hello, World!"); 
+    } 
+} 
+ What happens when you compile and run this code? Why is String[] args needed?
+
+Error: Main method not found in class Main
+
+explaination:In the above code,the String[] args parameter is missing.To fix the error, we need to change the main method signature to include String[] args, which is essential for the JVM to identify and execute the method as the starting point of the program.
+
+
+corrected code:
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Hello, World!"); 
+    } 
+}

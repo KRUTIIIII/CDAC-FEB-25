@@ -1,0 +1,23 @@
+public class Main { 
+    public static void main(String[] args) { 
+        double num = "Hello"; 
+        System.out.println(num); 
+    } 
+} 
+ What compilation error occurs? Why does Java enforce data type constraints?
+-----------------------------------------------
+error: incompatible types: String cannot be converted to double
+        double num = "Hello"; 
+                     ^
+----------------------------------------------
+ error occurs becoz "Hello" is a String and String cannot be assigned to a double, the compiler throws an "incompatible types" error.
+---------------------------------------------------
+public class Main { 
+    public static void main(String[] args) { 
+        double num = 10.5;  //we can use a numeric value instead of string
+        System.out.println(num);
+    } 
+}
+------------------------------------------
+Java Enforce Data Type Constraints becoz Java is a statically typed language, means every variable must have a specific declared data type. 
+This ensures that the data stored in a variable is correct, predictable, and safe.

@@ -1,0 +1,32 @@
+public class Main { 
+    public static void main(String[] args) { 
+        static void displayMessage() { 
+            System.out.println("Message"); 
+        } 
+    } 
+} 
+ What syntax error occurs? Can a method be declared inside another method?
+
+-------------------------------------------
+The code contains a syntax error because the displayMessage() method is declared inside the main() method. In Java, methods cannot be nested inside other methods.
+----------------------------
+error: illegal start of expression
+         static void displayMessage() { 
+
+This error occurs because the static keyword is being used incorrectly within a method.
+---------------------------------------------------
+corrected code:To fix this error,we have to move the displayMessage() method outside the main() method, so it belongs to the class.
+---------------
+public class Main { 
+
+    // Method moved outside main()
+    static void displayMessage() { 
+
+        System.out.println("Message"); 
+    } 
+
+    public static void main(String[] args) { 
+        displayMessage(); // Call the method
+    } 
+} 
+

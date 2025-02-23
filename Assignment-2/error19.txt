@@ -1,0 +1,14 @@
+public class Main { 
+    public static void main(String[] args) { 
+        int a = 10; 
+        int b = 0; 
+        int result = a / b; 
+        System.out.println(result); 
+    } 
+} 
+ What runtime exception is thrown? Why does division by zero cause an issue in Java?
+------------------------------------------------
+The code gives a runtime error due to division by zero (a / b).
+In Java, dividing an integer by zero is not allowed and results in an exception.
+Java does not allow integer division by zero because it cannot produce a finite, well-defined result.
+The JVM throws an ArithmeticException to prevent undefined behavior.

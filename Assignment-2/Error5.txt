@@ -1,0 +1,34 @@
+Snippet 5:  
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Main method with String[] args"); 
+    } 
+    public static void main(int[] args) { 
+        System.out.println("Overloaded main method with int[] args"); 
+    } 
+} 
+ Can you have multiple main methods? What do you observe? 
+
+ans:Yes, we can have multiple overloaded main methods in Java, but only the standard main method with String[] args acts as the entry point for program execution.
+
+There is no compilation error in the code because Java allows method overloading.
+
+Method overloading means multiple methods can have the same name but different parameter lists. But only one of these methods will be recognized as the program's entry point when the program runs
+
+corrected code:
+
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Main method with String[] args"); 
+        
+        int[] numbers = {1, 2, 3};
+        main(numbers);
+    } 
+    
+    public static void main(int[] args) { 
+        System.out.println("Overloaded main method with int[] args"); 
+    } 
+} 
+
+
+If we want to ensure that both methods are executed, we need to manually call the overloaded main method from inside the standard main method.

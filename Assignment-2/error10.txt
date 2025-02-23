@@ -1,0 +1,54 @@
+public class Main { 
+    public void display() { 
+        System.out.println("No parameters"); 
+    } 
+    public void display(int num) { 
+        System.out.println("With parameter: " + num); 
+    } 
+    public static void main(String[] args) { 
+        display(); 
+        display(5); 
+    } 
+} 
+ What happens when you compile and run this code? Is method overloading allowed?
+
+
+ans: error: We  will get a compilation error.
+The methods display() are instance methods i.e. they are not static.
+In the main() method, we are calling display(); and display(5); without an instance of the class.
+-------------------------------------------------------
+explaination: it will show error because the display() method is a non-static method, but it is being called directly inside the static main method. 
+In Java, a static method cannot directly call a non-static method without an instance of the class.
+-The methods display() and display(int num) are instance methods (non-static).
+-Since display() is an instance method, it cannot be called directly inside the static main() method. we will need to create an object of the Main class to call instance methods.
+---------------------------------------
+corrected code:
+public class Main { 
+    public void display() { 
+        System.out.println("No parameters"); 
+    } 
+    public void display(int num) { 
+        System.out.println("With parameter: " + num); 
+    } 
+    public static void main(String[] args) { 
+        Main obj = new Main(); // Creating an object of Main
+        obj.display(); // Calling non-static method
+        obj.display(5); // Calling overloaded method
+    } 
+}
+---------------------------
+Explanation of the corrected Code:
+
+1. The class Main has two overloaded methods named display().
+-One method takes no parameters.
+-The other method takes an integer parameter.
+2. in the main method: we have created an object of the Main class (obj).
+-The display() method is called without parameters, so it prints "No parameters".
+-The display(int num) method is called with 5, so it prints "With parameter: 5".
+--------------------------------------------
+Yes, method overloading is allowed in Java.It allows multiple methods to have the same name but the parameter list must be different.Overloaded methods can be static or non-static.
+
+
+
+
+

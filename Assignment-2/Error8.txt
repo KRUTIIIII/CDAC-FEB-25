@@ -1,0 +1,22 @@
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Hello, World!" 
+    } 
+} 
+ What syntax errors are present? How do they affect compilation?
+
+
+the code has a Syntac error in the SOP statement. There is a missing closing bracket in the sop statement. The missing ) causes the compiler to fail because it expects the statement to be complete, so the compiler does not understand where the statement ends.
+
+corrected code:
+
+public class Main { 
+    public static void main(String[] args) { 
+        System.out.println("Hello, World!"); 
+} 
+
+
+
+syntax affects compilation:
+-Syntax errors stop the program from compiling means it won't run until the error is fixed.
+-the missing statements make the compiler unable to understand the code structure.

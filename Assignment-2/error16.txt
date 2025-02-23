@@ -1,0 +1,28 @@
+public class Main { 
+    public static void main(String[] args) { 
+        int num = 10; 
+        double result = num / 4; 
+        System.out.println(result); 
+    } 
+} 
+ What is the result of this operation? Is the output what you expected?
+
+------------------------------------------------------------------
+ans: expected output is 2.5 but the actual output is 2.0 becoz :
+-num is an int (10)and 4 is also int (4).
+Since both operands (num and 4) are integers, Java performs integer division, discarding the decimal part.
+
+10 / 4  -->  2  (not 2.5, because the decimal is discarded)
+here The result of 10 / 4 is 2 (an int), not 2.5
+now,After performing integer division (10 / 4 → 2), Java converts the result (2) to double only after the division.
+So, 2 is converted to 2.0 as output
+-------------------------------------
+corrected:
+public class Main { 
+    public static void main(String[] args) { 
+        int num = 10; 
+        double result = num / 4.0; // Ensure one operand is double
+        System.out.println(result); 
+    } 
+}
+-----------------------------------------------

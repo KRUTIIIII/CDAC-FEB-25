@@ -1,0 +1,10 @@
+corrected code:
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+Q2.What happens when you compile and run this code?
+error:Main method not found in class Main
+ans: The error occurs because the method main is missing the public access modifier.The main method needs to be public because the Java Virtual Machine (JVM) needs access to it in order to execute the program.

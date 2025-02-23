@@ -1,0 +1,18 @@
+public class Main { 
+    public static void main(String[] args) { 
+        String str = null; 
+        System.out.println(str.length()); 
+    } 
+} 
+ What exception is thrown? Why does it occur?
+
+--------------------------------------
+when we run the code it throws a NullPointerException, because str is declared as a String variable, but it is not initialized with an actual string value.
+Instead, it is assigned null, which means it does not point to any object in memory.
+-----------------------------------------------
+public class Main { 
+    public static void main(String[] args) { 
+        String str = ""; // Assign an empty string instead of null
+        System.out.println(str.length()); // Prints 0
+    } 
+}

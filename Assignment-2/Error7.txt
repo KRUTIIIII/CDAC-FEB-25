@@ -1,0 +1,28 @@
+Snippet 7:  
+public class Main { 
+    public static void main(String[] args) { 
+        int x = "Hello"; 
+        System.out.println(x); 
+    } 
+} 
+What compilation error do you see? Why does Java enforce type safety?
+
+------------------------------
+error: incompatible types: String cannot be converted to int
+        int x = "Hello";
+                ^
+--------------------------------------------------------
+In the given code, int x = "Hello"; is invalid because "Hello" is a String, while x is declared as an integer (int)
+a variable can only store values of its declared type.
+Integers can only store numerical values, not text.
+-----------------------------------------
+Corrected Code :
+
+public class Main { 
+    public static void main(String[] args) { 
+        String x = "Hello";  
+        System.out.println(x); 
+    } 
+
+-------------------------------------
+Java enforces type safety to prevent data corruption, detect errors early, and improve program reliability.
