@@ -1,0 +1,90 @@
+/* Set the Hogwarts background */
+body {
+    background-image:url("hog.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Georgia', serif; /* Adding a magical feel */
+  }
+  
+  /* Style for the container */
+  .container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Style for form containers */
+  .form-container {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    height:500px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: 'Harry Potter', serif;
+    font-size: 2em;
+    margin-bottom: 80px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #b59d6f; /* Hogwarts gold */
+    color: white;
+    padding-right: 15px;
+    padding-left:10px;
+    margin-top:15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+    font: size:1.2em;
+    height:30px;
+  }
+  
+  button:hover {
+    background-color: #9a7a4b; /* Slightly darker gold */
+  }
+  
+  a {
+    color: #f8f8f8;
+    text-decoration: none;
+  }
+  
+  .sub-text {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  
+  .outline-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 60%;
+    border-radius: 5px;
+    height:fit-content;
+    font-family: 'Harry Potter', serif;
+  }
+  
+  .outline-btn:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
