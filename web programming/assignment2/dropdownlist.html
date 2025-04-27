@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdownlist</title>
+    <style>
+   #btn{
+    background-color:rgb(137, 238, 13);
+   }
+   #mydropdown{
+    background-color:rgb(20, 151, 227);
+   }
+   body{
+    background-color: black;
+
+   }
+    </style>
+</head>
+<body>
+    <h3>DROP DOWN LIST</h3>
+    <select id="mydropdown">
+        <option value="apple">apple</option>
+        <option value="banana">banana</option>
+        <option value="cherry">cheery</option>
+        <option value="mango">mango</option>
+        <option value="orange">orange</option>
+    </select>
+<button id="btn" onclick="removeItem()">Remove Selected Item</button>
+
+<script>{ 
+    function removeItem(){
+        var dropdown = document.getElementById("mydropdown");
+         dropdown.remove(dropdown.selectedIndex);
+    }
+}
+</script>
+
+</body>
+</html>

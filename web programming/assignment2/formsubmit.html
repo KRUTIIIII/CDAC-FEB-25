@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission</title>
+</head>
+<body>
+
+<form id="userForm">
+    First Name: <input type="text" id="firstName"><br><br>
+    Last Name: <input type="text" id="lastName"><br><br>
+    Contact No.: <input type="text" id="contact"><br><br>
+    Email ID: <input type="email" id="email"><br><br>
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<div id="output"></div>
+
+<script>
+function submitForm() {
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var contact = document.getElementById("contact").value;
+    var email = document.getElementById("email").value;
+    
+    var output = `
+        <h3>Submitted Information:</h3>
+        First Name: ${firstName} <br>
+        Last Name: ${lastName} <br>
+        Contact No.: ${contact} <br>
+        Email ID: ${email}
+    `;
+    document.getElementById("output").innerHTML = output;
+}
+</script>
+
+</body>
+</html>
